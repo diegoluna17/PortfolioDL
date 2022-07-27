@@ -1,0 +1,19 @@
+.row{
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#iconos{
+    background-color: #416790e4;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+}
+
+#banner{
+    background-color: #a1b5cb83;
+}
+

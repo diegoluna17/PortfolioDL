@@ -1,0 +1,22 @@
+.row{
+    max-width: 100%;
+    background-color: #a1b5cb83;
+    border-radius: 7px;
+    
+}
+
+footer{
+    color: #fefefe;
+    font-size: 14px;
+    text-shadow: 0 0 7px black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: -1px -1px 10px black;
+    border-radius: 7px;
+}
+
+#espaciado{
+    height: 2em;
+    background-color: white;
+}

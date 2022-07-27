@@ -1,0 +1,32 @@
+.row{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoAP{
+    width: 150px;
+}
+
+img{
+    width: 35px;
+    margin-left: 5px;
+}
+
+.btn{
+    background: #a1b5cb83;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.btn::before{
+    content: "Ingresar";
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 14px;
+}
