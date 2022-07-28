@@ -15,7 +15,7 @@ import { ProyectosComponent } from './proyectos_components/proyectos/proyectos.c
 import { Proyecto1Component } from './proyectos_components/proyecto1/proyecto1.component';
 import { FooterComponent } from './footer_components/footer/footer.component';
 import { IconosApComponent } from './header_components/iconos-ap/iconos-ap.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -37,7 +37,8 @@ import { IconosApComponent } from './header_components/iconos-ap/iconos-ap.compo
 
   imports: [
     BrowserModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
