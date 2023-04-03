@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository
-public interface IPersonaRepository extends JpaRepository<Persona, Long>{
+public interface IPersonaRepository extends JpaRepository<Persona, Long>{ // A través de Persona el repositorio se comunica con la Entidad
     
 }

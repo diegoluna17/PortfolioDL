@@ -6,6 +6,8 @@ import java.util.List;
  *
  * @author Diego Luna
  */
+
+//El controlador llama a esta interface
 public interface IPersonaService {
     //Traer una lista persona
     public List<Persona> getPersona();

@@ -11,6 +11,7 @@ import javax.validation.constraints.Size;
  * @author Diego Luna
  */
 
+// El repositorio solicita información a esta Entidad, y ésta devuelve o almacena información 
 @Entity
 public class Persona {
     @Id
