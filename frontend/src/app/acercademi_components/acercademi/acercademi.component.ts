@@ -8,7 +8,7 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./acercademi.component.css']
 })
 export class AcercademiComponent implements OnInit {
-  persona: persona = new persona("","","");
+  persona: persona = new persona("","",""); //Crea un objeto de tipo persona, clase del model
 
   constructor(public personaService: PersonaService) { }
 

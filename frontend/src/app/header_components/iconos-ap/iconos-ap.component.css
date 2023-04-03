@@ -22,11 +22,8 @@ img{
     background: #a1b5cb83;
     border-radius: 5px;
     border: 1px solid black;
-}
-
-.btn::before{
-    content: "Ingresar";
     color: white;
     font-family: 'Century Gothic', sans-serif;
-    font-size: 14px;
 }
+
+
