@@ -1,61 +1,38 @@
-.row{
+.container{
+    margin: 0px;
+    padding: 0px;
     max-width: 100%;
     border: 3px solid black;
+    border-radius: 7px;
+    border-bottom-left-radius: 7px;
     background-color: #a1b5cb83;
 }
 
-div{
-    border-radius: 7px;
-    
-}
-
-#espaciado{
-    height: 2em;
-    background-color: white;
-}
-
-#proyectos{
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #416790a9;
     border-bottom: 1px solid black;
+    padding-left: 15px;
 }
 
-.divtext, .divimg{
-    display: inline-block;
-    vertical-align: middle;  
+.union{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
 }
 
-.divtext{
-    margin: auto;
-    padding: 20px;
+.centrarImg{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
-
-
-@media (min-width: 768px){
-    .divimg{
-
-        padding: 20px;
-        text-align: center;
-    }
-    
-    #img{
-        max-width: 100%;
-        box-shadow: 10px 10px 30px #000000;
-    }
+img{
+    max-width: 60%; 
+    height: auto;
+    padding: 2%;
 }
-
-@media (max-width: 768px){
-    #img{
-        max-width: 60%;
-        box-shadow: 10px 10px 30px #000000;
-    }
-
-    .divimg{
-        position: relative;
-        text-align: center;
-        bottom: 18px;
-    }
-
-}
-
 

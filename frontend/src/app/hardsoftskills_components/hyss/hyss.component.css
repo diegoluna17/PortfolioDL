@@ -1,4 +1,6 @@
-.row{
+.container{
+    margin: 0px;
+    padding: 0px;
     max-width: 100%;
     border: 3px solid black;
     background-color: #a1b5cb83;
@@ -9,10 +11,6 @@ div{
     
 }
 
-#espaciado{
-    height: 2em;
-    background-color: white;
-}
 
 #hyss{
     background-color: #416790a9;

@@ -24,8 +24,6 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     if(this.tokenService.getToken()){
-      console.log(this.tokenService.getToken());
-      console.log("Hola pase por acá")
       this.isLogged = true;
       this.isLogginFail = false;
       this.roles = this.tokenService.getAuthorities();
@@ -34,7 +32,6 @@ export class LoginComponent implements OnInit {
 
   onLogin(): void{
     this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password); 
-    console.log(this.loginUsuario);
     this.authService.login(this.loginUsuario).subscribe(data => {
       this.isLogged = true;
       this.isLogginFail = false;
