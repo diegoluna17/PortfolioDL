@@ -5,9 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header_components/header/header.component';
 import { BannerComponent } from './header_components/banner/banner.component';
 import { AcercademiComponent } from './acercademi_components/acercademi/acercademi.component';
-import { LaboralComponent } from './experiencia_components/laboral/laboral.component';
-import { EstudiosComponent } from './experiencia_components/estudios/estudios.component';
-import { ExperienciaComponent } from './experiencia_components/experiencia/experiencia.component';
+import { EstudiosComponent } from './estudios_components/estudios/estudios.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HyssComponent } from './hardsoftskills_components/hyss/hyss.component';
 import { CircleprogressComponent } from './hardsoftskills_components/circleprogress/circleprogress.component';
@@ -20,6 +18,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components_home/home/home.component';
 import { LoginComponent } from './components_login/login/login.component';
 import { interceptorProvider } from './service/interceptor.service';
+import { NewExpericienciaLComponent } from './experienciaLaboral_components/experiencia-laboral/new-expericiencia-l.component';
+import { ExperienciaLaboralComponent } from './experienciaLaboral_components/experiencia-laboral/experiencia-laboral.component';
+import { EditExpericienciaLComponent } from './experienciaLaboral_components/experiencia-laboral/edit-expericiencia-l.component';
+import { NewEstudioComponent } from './estudios_components/estudios/new-estudio.component';
+import { EditEstudiosComponent } from './estudios_components/estudios/edit-estudios.component';
 
 
 @NgModule({
@@ -28,9 +31,7 @@ import { interceptorProvider } from './service/interceptor.service';
     HeaderComponent,
     BannerComponent,
     AcercademiComponent,
-    LaboralComponent,
     EstudiosComponent,
-    ExperienciaComponent,
     HyssComponent,
     CircleprogressComponent,
     ProyectosComponent,
@@ -39,6 +40,11 @@ import { interceptorProvider } from './service/interceptor.service';
     IconosApComponent,
     HomeComponent,
     LoginComponent,
+    NewExpericienciaLComponent,
+    ExperienciaLaboralComponent,
+    EditExpericienciaLComponent,
+    NewEstudioComponent,
+    EditEstudiosComponent,
     
   ],
 
