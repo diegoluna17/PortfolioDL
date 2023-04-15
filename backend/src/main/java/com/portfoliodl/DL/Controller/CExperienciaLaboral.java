@@ -4,7 +4,6 @@
  */
 package com.portfoliodl.DL.Controller;
 
-
 import com.portfoliodl.DL.Dto.dtoExperienciaLaboral;
 import com.portfoliodl.DL.Entity.ExperienciaLaboral;
 import com.portfoliodl.DL.Security.Controller.Mensaje;
@@ -20,12 +19,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 
 /**
  *
- * @author Diego
+ * @author Diego Luna
  */
 
 @RestController
@@ -39,6 +39,14 @@ public class CExperienciaLaboral {
     public ResponseEntity<List<ExperienciaLaboral>> list(){
         List<ExperienciaLaboral> list = sExperienciaL.list();
         return new ResponseEntity(list, HttpStatus.OK);
+    }
+    
+    @GetMapping("/detail/{id}")
+    public ResponseEntity<ExperienciaLaboral> detail(@PathVariable("id") int id){
+        if(!sExperienciaL.existsById(id))
+            return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.BAD_REQUEST);
+        ExperienciaLaboral experienciaLaboral = sExperienciaL.getOne(id).get();
+        return new ResponseEntity(experienciaLaboral, HttpStatus.OK);
     }
     
     @PostMapping("/create")
@@ -60,7 +68,7 @@ public class CExperienciaLaboral {
             return new ResponseEntity(new Mensaje("La experiencia que intenta actualizar no existe..."), HttpStatus.BAD_REQUEST);
         
         if(sExperienciaL.existsByNombreE(dtoExpLab.getNombreE()) && sExperienciaL.getByNombreE(dtoExpLab.getNombreE()).get().getId() != id)
-            return new ResponseEntity(new Mensaje("La experiencia que intenta agregar ya existe..."), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity(new Mensaje("La experiencia que intenta ingresar ya existe..."), HttpStatus.BAD_REQUEST);
         
         if(StringUtils.isBlank(dtoExpLab.getNombreE()))
             return new ResponseEntity(new Mensaje("Nombre obligatorio..."), HttpStatus.BAD_REQUEST);
@@ -73,6 +81,7 @@ public class CExperienciaLaboral {
         return new ResponseEntity(new Mensaje("Experiencia actualizada exitosamente..."), HttpStatus.OK);
     }
     
+    @DeleteMapping("delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id){
         if(!sExperienciaL.existsById(id))
             return new ResponseEntity(new Mensaje("La experiencia que intenta eliminar no existe..."), HttpStatus.BAD_REQUEST);

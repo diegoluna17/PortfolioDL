@@ -10,8 +10,6 @@ import javax.validation.constraints.NotBlank;
  *
  * @author Diego
  */
-
-
 public class dtoExperienciaLaboral {
     @NotBlank
     private String nombreE;

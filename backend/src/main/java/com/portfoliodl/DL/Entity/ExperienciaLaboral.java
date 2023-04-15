@@ -11,25 +11,25 @@ import javax.persistence.Id;
 
 /**
  *
- * @author Diego
+ * @author Diego Luna
  */
-
 @Entity
 public class ExperienciaLaboral {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String nombreEL;
-    private String descripcionEL;
+    
+    private String nombreE;
+    private String descripcionE;
     
     //Constructores
 
     public ExperienciaLaboral() {
     }
 
-    public ExperienciaLaboral(String nombreEL, String descripcionEL) {
-        this.nombreEL = nombreEL;
-        this.descripcionEL = descripcionEL;
+    public ExperienciaLaboral(String nombreE, String descripcionE) {
+        this.nombreE = nombreE;
+        this.descripcionE = descripcionE;
     }
     
     // Get & Set
@@ -42,20 +42,20 @@ public class ExperienciaLaboral {
         this.id = id;
     }
 
-    public String getNombreEL() {
-        return nombreEL;
+    public String getNombreE() {
+        return nombreE;
     }
 
-    public void setNombreEL(String nombreEL) {
-        this.nombreEL = nombreEL;
+    public void setNombreEL(String nombreE) {
+        this.nombreE = nombreE;
     }
 
-    public String getDescripcionEL() {
-        return descripcionEL;
+    public String getDescripcionE() {
+        return descripcionE;
     }
 
-    public void setDescripcionEL(String descripcionEL) {
-        this.descripcionEL = descripcionEL;
+    public void setDescripcionEL(String descripcionE) {
+        this.descripcionE = descripcionE;
     }
     
     
