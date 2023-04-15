@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="head" >
+        <div><h1>Experiencia laboral</h1></div>
+        <div class="btn"><button type="button" class="btn btn-primary right-btn" data-toggle="button" aria-pressed="false" routerLink="/newexpericialab" *ngIf="isLogged">
+            <i class="bi bi-plus-circle-fill"></i> Añadir
+        </button>
+        </div>
+    </div>
+    <div>
+<!--         <h5 *ngIf="!isLogged">Aún no se han cargado estudios...</h5>
+        <h5 *ngIf="isLogged && estaVacio">Haz click en "Añadir" para agregar una Experiencia Laboral...</h5> -->
+        <table class="table">            
+            <tbody *ngFor="let exp of experienciaLaboral">
+                <tr>
+                    <td><h3 class="titulo">{{exp.nombreE}}</h3></td>
+                    <td><p>{{exp.descripcionE}}</p></td>
+                    <td>
+                        <button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" routerLink="/editexp/{{exp.id}}" *ngIf="isLogged"> <i class="bi bi-pencil-fill"></i> </button>
+                    </td>    
+                    <td> <button type="button" class="btn btn-danger" *ngIf="isLogged" (click)="delete(exp.id)"> <i class="bi bi-trash-fill"></i> </button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
