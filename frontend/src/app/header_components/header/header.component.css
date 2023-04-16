@@ -1,19 +1,54 @@
-.row{
+.container{
+    margin: 0px;
+    padding: 0px;
     max-width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-}
-
-#iconos{
+    border: 3px solid black;
+    border-radius: 7px;
+    border-bottom-left-radius: 7px;
     background-color: #416790e4;
-    border-radius: 5px;
-    border-bottom: 1px solid black;
 }
 
-#banner{
-    background-color: #a1b5cb83;
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.icon{
+    width: 35px;
+    margin-left: 5px; 
+}
+
+.logoAP{
+    width: 170px;
+    margin-left: 5px;
+}
+
+.btn{
+    text-align: right;
+    background: #a1b5cb83;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.item{
+    display: inline;
+    max-width: 33.3%;
+   
+}
+
+.banner{
+    display: block;
+    margin:auto;
+    background-color: #b7c6d6;
+}
+
+.img-banner{
+    width: 100%;
+    display: block;
+    margin:auto;
 }
 

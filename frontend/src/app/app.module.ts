@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header_components/header/header.component';
-import { BannerComponent } from './header_components/banner/banner.component';
 import { AcercademiComponent } from './acercademi_components/acercademi/acercademi.component';
 import { EstudiosComponent } from './estudios_components/estudios/estudios.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
@@ -12,7 +11,6 @@ import { CircleprogressComponent } from './hardsoftskills_components/circleprogr
 import { ProyectosComponent } from './proyectos_components/proyectos/proyectos.component';
 import { Proyecto1Component } from './proyectos_components/proyecto1/proyecto1.component';
 import { FooterComponent } from './footer_components/footer/footer.component';
-import { IconosApComponent } from './header_components/iconos-ap/iconos-ap.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components_home/home/home.component';
@@ -29,7 +27,6 @@ import { EditEstudiosComponent } from './estudios_components/estudios/edit-estud
   declarations: [
     AppComponent,
     HeaderComponent,
-    BannerComponent,
     AcercademiComponent,
     EstudiosComponent,
     HyssComponent,
@@ -37,7 +34,6 @@ import { EditEstudiosComponent } from './estudios_components/estudios/edit-estud
     ProyectosComponent,
     Proyecto1Component,
     FooterComponent,
-    IconosApComponent,
     HomeComponent,
     LoginComponent,
     NewExpericienciaLComponent,
