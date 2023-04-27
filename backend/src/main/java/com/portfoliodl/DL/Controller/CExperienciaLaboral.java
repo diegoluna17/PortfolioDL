@@ -31,7 +31,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 @RestController
 @RequestMapping("explab")
 @CrossOrigin(origins = "http://localhost:4200")
-public class CExperienciaLaboral {
+public class cExperienciaLaboral {
     @Autowired
     sExperienciaLaboral sExperienciaL;
     
