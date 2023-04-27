@@ -10,9 +10,9 @@ import { SExperienciaLaboralService } from 'src/app/service/s-experiencia-labora
 })
 export class NewExpericienciaLComponent implements OnInit {
   
-  nombreE!: string
-  descripcionE!: string
-  exp!: ExperienciaLaboral
+  nombreE: string
+  descripcionE: string
+  exp: ExperienciaLaboral
 
   constructor(private sExperiencia: SExperienciaLaboralService, private router:Router) { }
 

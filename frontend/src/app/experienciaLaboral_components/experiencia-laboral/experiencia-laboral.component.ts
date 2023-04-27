@@ -12,20 +12,11 @@ export class ExperienciaLaboralComponent implements OnInit {
 
   experienciaLaboral: ExperienciaLaboral[] = [];
   isLogged = false
- /*  estaVacio = false */
- 
 
   constructor(private sExperienciaLaboral: SExperienciaLaboralService, private tokenService: TokenService ) { }
 
   ngOnInit(): void {
     this.cargaExperiencia();
-/*     alert("index: " + this.experienciaLaboral.length)
-    if(this.experienciaLaboral.length === 0){
-      this.estaVacio = true
-      console.log()
-    }else{
-      this.estaVacio = false
-    } */
     if(this.tokenService.getToken()){
       this.isLogged = true;
     } else{
