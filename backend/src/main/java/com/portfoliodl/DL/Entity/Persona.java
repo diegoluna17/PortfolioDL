@@ -16,7 +16,7 @@ import javax.validation.constraints.Size;
 public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     
     @NotNull
     @Size(min=1, max=50, message="Error en la longitud")
@@ -26,19 +26,34 @@ public class Persona {
     @Size(min=1, max=50, message="Error en la longitud")
     private String apellido;
     
-    @Size(min=1, max=50, message="Error en la longitud")
+    @NotNull
+    private String descripcion;
+    
+    @NotNull
     private String img;
 
-    public Long getId() {
-        return id;
+    public Persona() {
     }
 
-    public void setId(Long id) {
+    public Persona(String nombre, String apellido, String descripcion, String img) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.descripcion = descripcion;
+        this.img = img;
+    }
+    
+    
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
         this.id = id;
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     public void setNombre(String nombre) {
@@ -46,15 +61,23 @@ public class Persona {
     }
 
     public String getApellido() {
-        return apellido;
+        return this.apellido;
     }
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
+    
+    public String getDescripcion(){
+        return this.descripcion;
+    }
+    
+    public void setDescripcion(String descripcion){
+        this.descripcion = descripcion;
+    }
 
     public String getImg() {
-        return img;
+        return this.img;
     }
 
     public void setImg(String img) {
