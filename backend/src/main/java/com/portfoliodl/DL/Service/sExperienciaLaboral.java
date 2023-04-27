@@ -5,12 +5,12 @@
 package com.portfoliodl.DL.Service;
 
 import com.portfoliodl.DL.Entity.ExperienciaLaboral;
-import com.portfoliodl.DL.Repository.iRExperienciaLaboral;
 import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.portfoliodl.DL.Repository.iExperienciaLaboralRepository;
 
 /**
  *
@@ -21,7 +21,7 @@ import org.springframework.stereotype.Service;
 @Transactional
 public class sExperienciaLaboral {
     @Autowired
-    iRExperienciaLaboral rExperienciaLaboral;
+    iExperienciaLaboralRepository rExperienciaLaboral;
 
     public List<ExperienciaLaboral> list(){
         return rExperienciaLaboral.findAll();

@@ -8,7 +8,7 @@ import javax.validation.constraints.NotBlank;
 
 /**
  *
- * @author Diego
+ * @author Diego Luna
  */
 public class dtoExperienciaLaboral {
     @NotBlank
