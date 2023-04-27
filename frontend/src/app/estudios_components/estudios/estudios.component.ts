@@ -11,17 +11,11 @@ import { TokenService } from '../../service/token.service';
 export class EstudiosComponent implements OnInit {
   estudios: Estudios[] = []
   isLogged = false
-/*   estaVacio = true */
 
   constructor(private sEstudios: SEstudiosService, private tokenService: TokenService) { }  
 
   ngOnInit(): void {
     this.cargaEstudio();
-/*     if(this.estudios.length == 0){
-      this.estaVacio = true
-    }else{
-      this.estaVacio = false
-    } */
     if(this.tokenService.getToken()){
       this.isLogged = true
     }else{

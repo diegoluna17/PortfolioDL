@@ -22,7 +22,7 @@ export class NewEstudioComponent implements OnInit {
   onCreate(): void{
     this.estudio = new Estudios(this.nombreEs, this.descripcionEs)
     this.sEstudio.save(this.estudio).subscribe(data =>{
-      alert("La operación se realizó exitosamente...")
+      alert("¡Estudio agregado exitosamente!")
       this.router.navigate([''])
     },
     err =>{
