@@ -106,5 +106,8 @@
       }
     }
   },
-  "defaultProject": "PortfolioEscritorio"
+  "defaultProject": "PortfolioEscritorio",
+  "cli": {
+    "analytics": "48775441-2c7d-4c6f-91e7-034ddc3f4c4d"
+  }
 }
