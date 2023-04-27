@@ -5,12 +5,12 @@
 package com.portfoliodl.DL.Service;
 
 import com.portfoliodl.DL.Entity.Estudio;
-import com.portfoliodl.DL.Repository.iREstudios;
 import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.portfoliodl.DL.Repository.iEstudiosRepository;
 
 /**
  *
@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 @Transactional
 public class sEstudios {
     @Autowired
-    iREstudios rEstudios;
+    iEstudiosRepository rEstudios;
     
     public List<Estudio> list(){
         return rEstudios.findAll();
