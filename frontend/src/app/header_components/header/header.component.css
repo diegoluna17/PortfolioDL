@@ -10,28 +10,49 @@
 
 .row{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+} 
+
+.iconos{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
     width: 100%;
 }
 
 .icon{
-    width: 35px;
+    max-width: 100%;
+    width: 30px;
     margin-left: 5px; 
 }
 
 .logoAP{
-    width: 170px;
+    max-width: 100%;
+    width: 150px;
+    margin-left: 5px;
     margin-left: 5px;
 }
 
 .btn{
-    text-align: right;
+    width: 80px;
+    height: 40px;
     background: #a1b5cb83;
     border-radius: 5px;
     border: 1px solid black;
     color: white;
+    font-size: 24px;
     font-family: 'Century Gothic', sans-serif;
+    box-shadow: 1px 1px 1px black;
+}
+
+.log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .item{
@@ -51,4 +72,6 @@
     display: block;
     margin:auto;
 }
+
+
 
