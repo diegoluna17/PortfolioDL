@@ -9,8 +9,8 @@ import { Hardysoftskill } from '../model/hardysoftskill';
 export class SHardysoftskillService {
 
   /* URL = "http://localhost:8080/hyss/" */
-  URL = "https://dlbackend.herokuapp.com/hyss"
-  
+  URL = "https://dlbackend.herokuapp.com/hyss/"
+
 
   constructor(private httpClient: HttpClient) { }
 
