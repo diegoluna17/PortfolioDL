@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Diego Luna
  */
 @RestController
-@RequestMapping("hyss")
+@RequestMapping("/hyss")
 @CrossOrigin(origins = "https://dlportfolioap.web.app")
 public class cHardysoftskill {
     @Autowired
@@ -81,7 +81,7 @@ public class cHardysoftskill {
         return new ResponseEntity(new Mensaje("Experiencia actualizada exitosamente..."), HttpStatus.OK);
     }
     
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id){
         if(!sHardysoftskill.existsById(id))
             return new ResponseEntity(new Mensaje("La habilidad que intenta eliminar no existe..."), HttpStatus.BAD_REQUEST);

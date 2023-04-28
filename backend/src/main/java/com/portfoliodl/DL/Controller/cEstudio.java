@@ -40,7 +40,7 @@ public class cEstudio {
         return new ResponseEntity(list, HttpStatus.OK);
     }
     
-    @GetMapping("detail/{id}")
+    @GetMapping("/detail/{id}")
     public ResponseEntity<Estudio> detail(@PathVariable("id") int id){
         Estudio estudio = sEstudio.getOne(id).get();
         return new ResponseEntity(estudio, HttpStatus.OK);
@@ -75,7 +75,7 @@ public class cEstudio {
         return new ResponseEntity(new Mensaje("Estudio actualizado correctamente."), HttpStatus.OK);  
     }
     
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id){
         if(!sEstudio.existsById(id))
             return new ResponseEntity(new Mensaje("Estudio no encontrado"), HttpStatus.BAD_REQUEST);

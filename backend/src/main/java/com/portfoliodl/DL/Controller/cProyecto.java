@@ -81,7 +81,7 @@ public class cProyecto {
         return new ResponseEntity(new Mensaje("Proyecto actualizada exitosamente..."), HttpStatus.OK);
     }
     
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id){
         if(!sProyecto.existsById(id))
             return new ResponseEntity(new Mensaje("El proyecto que intenta eliminar no existe..."), HttpStatus.BAD_REQUEST);

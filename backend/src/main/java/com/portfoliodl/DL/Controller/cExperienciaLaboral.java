@@ -29,7 +29,7 @@ import org.springframework.web.bind.annotation.PutMapping;
  */
 
 @RestController
-@RequestMapping("explab")
+@RequestMapping("/explab")
 @CrossOrigin(origins = "https://dlportfolioap.web.app")
 public class cExperienciaLaboral {
     @Autowired
@@ -81,7 +81,7 @@ public class cExperienciaLaboral {
         return new ResponseEntity(new Mensaje("Experiencia actualizada exitosamente..."), HttpStatus.OK);
     }
     
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id){
         if(!sExperienciaL.existsById(id))
             return new ResponseEntity(new Mensaje("La experiencia que intenta eliminar no existe..."), HttpStatus.BAD_REQUEST);
