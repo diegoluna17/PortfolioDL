@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://dlportfolioap.web.app")
 public class cPersona {
     @Autowired
     sPersona sPersona;
@@ -96,5 +97,9 @@ public class cPersona {
 //        return new ResponseEntity(new Mensaje("Experiencia eliminada exitosamente..."), HttpStatus.OK);
 //    }
     
-    
+    @PostMapping("/personas/crear")
+    public String createPersona(@RequestBody Persona persona){
+        sPersona.save(persona);
+        return "Persona creada correctamente";
+    }
 }
