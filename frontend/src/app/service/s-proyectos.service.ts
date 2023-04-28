@@ -10,6 +10,7 @@ export class SProyectosService {
 
   /* URL = "http://localhost:8080/proyectos/" */
   URL = "https://dlbackend.herokuapp.com/proyectos"
+  
 
   constructor(private httpClient: HttpClient) { }
 

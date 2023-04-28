@@ -9,6 +9,7 @@ import { Estudios } from '../model/estudios';
 export class SEstudiosService {
  /*  URL = "http://localhost:8080/estudios/" */
   URL = "https://dlbackend.herokuapp.com/estudios/"
+  
 
   constructor(private httpClient: HttpClient) { }
 
