@@ -9,7 +9,7 @@ import { Proyecto } from '../model/proyecto';
 export class SProyectosService {
 
   /* URL = "http://localhost:8080/proyectos/" */
-  URL = "https://dlbackend.herokuapp.com/proyectos/"
+  URL = "https://backendjava8.onrender.com/proyectos/"
 
 
   constructor(private httpClient: HttpClient) { }

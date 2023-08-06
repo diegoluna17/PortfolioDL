@@ -9,7 +9,7 @@ import { Persona } from '../model/persona';
 })
 export class PersonaService {
   /* URL = 'http://localhost:8080/personas/' */
-  URL = "https://dlbackend.herokuapp.com/personas/"
+  URL = "https://backendjava8.onrender.com/personas/"
   
 
   constructor(private httpClient: HttpClient) { }
